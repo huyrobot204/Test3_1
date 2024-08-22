@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Test3_1.sldasm">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.121372683225158 -0.100629241004951 0.295138580463577"
+        rpy="0 0 0" />
+      <mass
+        value="3.8011761006377" />
+      <inertia
+        ixx="0.0176352531009907"
+        ixy="-1.27512936752151E-09"
+        ixz="-2.65577996921071E-09"
+        iyy="0.0201039824225906"
+        iyz="-1.00501553163913E-10"
+        izz="0.0334988286101961" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.0798635609178104 0.119337677215708 -0.0015864225772072"
+        rpy="0 0 0" />
+      <mass
+        value="0.408283278953184" />
+      <inertia
+        ixx="0.000521882462130431"
+        ixy="-2.30887008690512E-09"
+        ixz="-0.000112983089630465"
+        iyy="0.000553873336257016"
+        iyz="-3.37697966249079E-07"
+        izz="0.000369624335402607" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/left_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/left_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel_joint"
+    type="fixed">
+    <origin
+      xyz="-0.217516382426369 -0.0859688487000705 0.213679707210803"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.0798635617075182 0.119337678299122 -0.0015864240180242"
+        rpy="0 0 0" />
+      <mass
+        value="0.408283254322917" />
+      <inertia
+        ixx="0.000521882439524514"
+        ixy="-2.30100967635333E-09"
+        ixz="-0.000112983098967625"
+        iyy="0.000553873316544929"
+        iyz="-3.37708776874209E-07"
+        izz="0.000369624324094519" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/right_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/right_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel_joint"
+    type="fixed">
+    <origin
+      xyz="-0.217570061254086 0.123698152583394 0.213679707210798"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="midl_wheel_link">
+    <inertial>
+      <origin
+        xyz="8.88180099481439E-07 0.0296172785131412 8.32667268468867E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.968975774829785" />
+      <inertia
+        ixx="0.00170115560343656"
+        ixy="1.82218282057657E-09"
+        ixz="1.88439511467893E-18"
+        iyy="0.00288276759907122"
+        iyz="1.52630998940623E-18"
+        izz="0.00170115056996547" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/midl_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/midl_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="midl_wheel_joint"
+    type="fixed">
+    <origin
+      xyz="-0.113702936279781 -0.259690399771941 0.229893812935314"
+      rpy="-3.14159265358979 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="midl_wheel_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="midr_wheel_link">
+    <inertial>
+      <origin
+        xyz="8.88180099481439E-07 -2.77555756156289E-17 0.0296172785131412"
+        rpy="0 0 0" />
+      <mass
+        value="0.968975774829784" />
+      <inertia
+        ixx="0.00170115560343656"
+        ixy="-1.99519415005731E-18"
+        ixz="1.82218282863047E-09"
+        iyy="0.00170115056996547"
+        iyz="-1.27678032021316E-19"
+        izz="0.00288276759907123" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/midr_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/midr_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="midr_wheel_joint"
+    type="fixed">
+    <origin
+      xyz="-0.113833461554514 0.0577828002280677 0.229893812935322"
+      rpy="1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="midr_wheel_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="backl_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.0798635616461957 0.119337678370074 -0.00158642392304489"
+        rpy="0 0 0" />
+      <mass
+        value="0.408283255088615" />
+      <inertia
+        ixx="0.000521882441685956"
+        ixy="-2.29941170441655E-09"
+        ixz="-0.000112983098736653"
+        iyy="0.000553873316536527"
+        iyz="-3.37710391643963E-07"
+        izz="0.00036962432362049" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/backl_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/backl_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="backl_wheel_joint"
+    type="fixed">
+    <origin
+      xyz="0.188051276058976 -0.0859853834188957 0.213838552594578"
+      rpy="0 0 -3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="backl_wheel_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="backr_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.0798635616462104 0.119337678370553 -0.00158642392353636"
+        rpy="0 0 0" />
+      <mass
+        value="0.408283255095254" />
+      <inertia
+        ixx="0.000521882441900862"
+        ixy="-2.29940974749141E-09"
+        ixz="-0.000112983098639424"
+        iyy="0.000553873316806166"
+        iyz="-3.37710384787923E-07"
+        izz="0.000369624323687469" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/backr_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Test3_1.sldasm/meshes/backr_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="backr_wheel_joint"
+    type="fixed">
+    <origin
+      xyz="0.188009915232328 0.123604189213359 0.213838552594581"
+      rpy="0 0 -3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="backr_wheel_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
